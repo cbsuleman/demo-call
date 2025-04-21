@@ -5,6 +5,7 @@ import { Gradient, GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { LogoCloud } from '@/components/logo-cloud'
 import { Navbar } from '@/components/navbar'
+import { ScrollHandler } from '@/components/ScrollHandler'
 import { Heading, Lead, Subheading } from '@/components/text'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import {
@@ -224,7 +225,8 @@ function Header() {
 
 function PricingCards() {
   return (
-    <div className="relative py-24">
+    // Add an ID here for the scroll target
+    <div id="pricing-cards" className="relative scroll-mt-24 py-24">
       <Gradient className="absolute inset-x-2 top-48 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
       <Container className="relative">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -598,6 +600,9 @@ export default function Pricing({ searchParams }) {
 
   return (
     <main className="overflow-hidden">
+      {/* Add the ScrollHandler at the top of your page */}
+      <ScrollHandler />
+
       <GradientBackground />
       <Container>
         <Navbar />
