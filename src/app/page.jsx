@@ -16,6 +16,7 @@ import { Screenshot } from '@/components/screenshot'
 import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
+import Image from 'next/image'
 
 export const metadata = {
   description:
@@ -70,7 +71,7 @@ function FeatureSection() {
           height={786}
           // src="/screenshots/app.png" // Replace with actual CallGauge dashboard screenshot
           src="/screenshots/dummy2.png" // Replace with actual CallGauge dashboard screenshot
-          className="mt-16 h-[36rem] sm:h-auto sm:w-[76rem]"
+          className="mt-16 sm:max-w-[76rem]"
         />
       </Container>
     </div>
@@ -91,8 +92,10 @@ function BentoSection() {
           title="See the source of inbound calls"
           description="Attribute inbound calls to specific campaigns with dynamic number insertion and easy call routing."
           graphic={
-            // <div className="h-80 bg-[url(/screenshots/profile.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
-            <div className="h-80 bg-[url(/screenshots/dummy2.png)] bg-[size:786px_486px] bg-[left_-80px_top_-112px] bg-no-repeat" />
+            <div className="relative h-80">
+              <Image src="/screenshots/dummy2.png" fill alt="" />
+            </div>
+            // <div className="h-80 bg-[url(/screenshots/dummy2.png)] bg-[size:786px_486px] bg-[left_-80px_top_-112px] bg-no-repeat" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -102,9 +105,10 @@ function BentoSection() {
           title="Learn how you’re getting leads"
           description="Understand which marketing channels drive calls and double down on what works best."
           graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/dummy2.png)] bg-[size:786px_486px] bg-[left_-80px_top_-112px] bg-no-repeat" />
-
-            // <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
+            // <div className="absolute inset-0 bg-[url(/screenshots/dummy2.png)] bg-[size:786px_486px] bg-[left_-80px_top_-112px] bg-no-repeat" />
+            <div className="relative h-80">
+              <Image src="/screenshots/dummy2.png" fill alt="" />
+            </div>
           }
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
@@ -155,7 +159,12 @@ function DarkBentoSection() {
             title="Effortlessly bill clients per call"
             description="Automate client invoicing and charge on a pay-per-call basis with real-time access."
             graphic={
-              <div className="h-80 bg-[url(/screenshots/dummy2.png)] bg-[size:851px_344px] bg-no-repeat" />
+              // <div className="h-80 bg-[url(/screenshots/dummy2.png)] bg-[size:851px_344px] bg-no-repeat" />
+
+              <div className="relative h-80">
+                <Image src="/screenshots/dummy2.png" fill alt="" />
+              </div>
+
               // <div className="h-80 bg-[url(/screenshots/networking.png)] bg-[size:851px_344px] bg-no-repeat" />
             }
             fade={['top']}
@@ -183,8 +192,10 @@ function DarkBentoSection() {
             title="Streamline phone operations"
             description="Manage SMS, voicemail, and calls with automated missed call notifications."
             graphic={
-              <div className="h-80 bg-[url(/screenshots/dummy2.png)] bg-[size:851px_344px] bg-no-repeat" />
-              // <div className="h-80 bg-[url(/screenshots/engagement.png)] bg-[size:851px_344px] bg-no-repeat" />
+              // <div className="h-80 bg-[url(/screenshots/dummy2.png)] bg-[size:851px_344px] bg-no-repeat" />
+              <div className="relative h-80">
+                <Image src="/screenshots/dummy2.png" fill alt="" />
+              </div>
             }
             fade={['top']}
             className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"

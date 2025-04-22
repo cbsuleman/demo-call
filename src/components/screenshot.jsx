@@ -11,17 +11,13 @@ export function Screenshot({ width, height, src, className }) {
       )}
     >
       <div className="absolute -inset-[var(--padding)] rounded-[calc(var(--radius)+var(--padding))] shadow-xs ring-1 ring-black/5 [--padding:--spacing(2)]" />
-      {/*<img*/}
-      {/*  alt=""*/}
-      {/*  src={src}*/}
-      {/*  className="h-full rounded-[var(--radius)] shadow-2xl ring-1 ring-black/10"*/}
-      {/*/>*/}
+
       <Image
         src={src}
         width={width}
         height={height}
         alt=""
-        className="h-full rounded-[var(--radius)] shadow-2xl ring-1 ring-black/10"
+        className="rounded-[var(--radius)] shadow-2xl ring-1 ring-black/10"
       />
     </div>
   )
