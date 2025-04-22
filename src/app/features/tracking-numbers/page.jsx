@@ -5,6 +5,7 @@ import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 import { CheckIcon, PlayIcon } from '@heroicons/react/16/solid'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Scalable Call Tracking Numbers',
@@ -60,9 +61,11 @@ function FeatureHighlight({ title, description, image, alt, reverse = false }) {
           </div>
           {image && (
             <div className="relative">
-              <img
+              <Image
                 src={image}
                 alt={alt}
+                width={750}
+                height={750}
                 className="w-full rounded-xl object-cover shadow-lg transition-transform duration-300 hover:scale-105"
               />
             </div>

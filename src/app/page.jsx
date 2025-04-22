@@ -66,8 +66,8 @@ function FeatureSection() {
           Your complete call tracking solution at industry-low pricing.
         </Heading>
         <Screenshot
-          width={1150}
-          height={768}
+          width={1216}
+          height={786}
           // src="/screenshots/app.png" // Replace with actual CallGauge dashboard screenshot
           src="/screenshots/dummy2.png" // Replace with actual CallGauge dashboard screenshot
           className="mt-16 h-[36rem] sm:h-auto sm:w-[76rem]"

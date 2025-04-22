@@ -9,6 +9,7 @@ import { ChevronLeftIcon } from '@heroicons/react/16/solid'
 import { notFound } from 'next/navigation'
 
 // Import data from the main blog page
+import Image from 'next/image'
 import { allPosts, categories } from '../page'
 
 export async function generateMetadata({ params }) {
@@ -65,9 +66,11 @@ export default function BlogPost({ params }) {
           <div className="text-gray-700">
             <div className="max-w-2xl xl:mx-auto">
               {post.mainImage && (
-                <img
+                <Image
                   alt={post.title}
                   src={post.mainImage}
+                  width={750}
+                  height={750}
                   className="mb-10 aspect-3/2 w-full rounded-2xl object-cover shadow-xl"
                 />
               )}

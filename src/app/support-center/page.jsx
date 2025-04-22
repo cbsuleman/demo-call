@@ -5,6 +5,7 @@ import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 import { CheckIcon } from '@heroicons/react/16/solid'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Support Center',
@@ -96,9 +97,11 @@ function CoreTerms() {
                   </p>
                 </div>
                 <div className="relative">
-                  <img
+                  <Image
                     src={option.image}
                     alt={option.alt}
+                    width={750}
+                    height={750}
                     className="w-full rounded-xl object-cover shadow-lg transition-transform duration-300 hover:scale-105"
                   />
                 </div>

@@ -25,7 +25,8 @@
     "react-fast-marquee": "^1.6.5",
     "react-spinners": "^0.15.0",
     "react-use-measure": "^2.1.1",
-    "sanity": "^3.55.0"
+    "sanity": "^3.55.0",
+    "sharp": "^0.34.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.3",

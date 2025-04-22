@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Marquee from 'react-fast-marquee'
 
 export function LogoCloud({ className }) {
@@ -45,9 +46,11 @@ export function LogoCloud({ className }) {
       <Marquee gradient={false} speed={40} pauseOnHover={true} className="py-8">
         {logos.map((logo, index) => (
           <div key={index} className="mx-5 sm:mx-6 md:mx-8 lg:mx-12">
-            <img
+            <Image
               alt={logo.alt}
               src={logo.src}
+              width={500}
+              height={500}
               className="h-16 w-auto sm:h-20 md:h-24 lg:h-28 xl:h-32"
             />
           </div>

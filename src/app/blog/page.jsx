@@ -13,6 +13,7 @@ import {
   ChevronUpDownIcon,
 } from '@heroicons/react/16/solid'
 import { clsx } from 'clsx'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Blog',
@@ -372,9 +373,11 @@ function FeaturedPosts() {
               className="relative flex flex-col rounded-3xl bg-white p-2 shadow-md ring-1 shadow-black/5 ring-black/5"
             >
               {post.mainImage && (
-                <img
+                <Image
                   alt={post.title}
                   src={post.mainImage}
+                  width={750}
+                  height={750}
                   className="aspect-3/2 w-full rounded-2xl object-cover"
                 />
               )}

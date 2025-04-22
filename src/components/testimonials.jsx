@@ -9,6 +9,7 @@ import {
   useScroll,
   useSpring,
 } from 'framer-motion'
+import Image from 'next/image'
 import { useCallback, useLayoutEffect, useRef, useState } from 'react'
 import useMeasure from 'react-use-measure'
 import { Container } from './container'
@@ -107,9 +108,11 @@ function TestimonialCard({
       {...props}
       className="relative flex aspect-9/16 w-72 shrink-0 snap-start scroll-ml-[var(--scroll-padding)] flex-col justify-end overflow-hidden rounded-3xl sm:aspect-3/4 sm:w-96"
     >
-      <img
+      <Image
         alt=""
         src={img}
+        width={1200}
+        height={1200}
         className="absolute inset-x-0 top-0 aspect-square w-full object-cover"
       />
       <div

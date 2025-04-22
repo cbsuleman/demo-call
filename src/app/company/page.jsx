@@ -6,6 +6,13 @@ import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 
+import Image from 'next/image'
+import img1 from '/public/company/1.jpg'
+import img2 from '/public/company/2.jpg'
+import img3 from '/public/company/3.jpg'
+import img4 from '/public/company/4.jpg'
+import testimonialsVeronica from '/public/testimonials/veronica-winton.jpg'
+
 export const metadata = {
   title: 'Company',
   description:
@@ -42,30 +49,30 @@ function Header() {
         <div className="pt-20 lg:row-span-2 lg:-mr-16 xl:mr-auto">
           <div className="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-              <img
+              <Image
                 alt=""
-                src="/company/1.jpg"
+                src={img1}
                 className="block size-full object-cover"
               />
             </div>
             <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
-              <img
+              <Image
                 alt=""
-                src="/company/2.jpg"
+                src={img2}
                 className="block size-full object-cover"
               />
             </div>
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-              <img
+              <Image
                 alt=""
-                src="/company/3.jpg"
+                src={img3}
                 className="block size-full object-cover"
               />
             </div>
             <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
-              <img
+              <Image
                 alt=""
-                src="/company/4.jpg"
+                src={img4}
                 className="block size-full object-cover"
               />
             </div>
@@ -109,7 +116,15 @@ function Header() {
 function Person({ name, description, img }) {
   return (
     <li className="flex items-center gap-4">
-      <img alt="" src={img} className="size-12 rounded-full" />
+      <Image
+        width={150}
+        height={150}
+        quality={80}
+        alt=""
+        src={img}
+        className="size-12 rounded-full"
+      />
+      {/*<img alt="" src={img} className="size-12 rounded-full" />*/}
       <div className="text-sm/6">
         <h3 className="font-medium">{name}</h3>
         <p className="text-gray-500">{description}</p>
@@ -154,11 +169,8 @@ function Team() {
         </div>
         <div className="max-lg:order-first max-lg:max-w-lg">
           <div className="aspect-3/2 overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-            <img
-              alt=""
-              src="/company/5.jpg"
-              className="block size-full object-cover"
-            />
+            {/*<Image alt="" src={img5} className="block size-full object-cover" />*/}
+            <Image alt="" src={img4} className="block size-full object-cover" />
           </div>
         </div>
       </div>
@@ -245,6 +257,7 @@ function Investors() {
             src="/investors/remington-schwartz.svg"
             className="h-14"
           />
+
           <p className="mt-6 max-w-lg text-sm/6 text-gray-500">
             Remington Schwartz is a tech investment powerhouse, supporting
             innovative startups that challenge industry norms. Their expertise
@@ -348,9 +361,9 @@ function Values() {
           </div>
         </div>
         <div className="relative flex aspect-square flex-col justify-end overflow-hidden rounded-3xl sm:aspect-5/4 lg:aspect-3/4">
-          <img
+          <Image
+            src={testimonialsVeronica}
             alt=""
-            src="/testimonials/veronica-winton.jpg"
             className="absolute inset-0 object-cover"
           />
           <div
@@ -358,7 +371,7 @@ function Values() {
             className="absolute inset-0 rounded-3xl bg-linear-to-t from-black from-10% to-75% ring-1 ring-gray-950/10 ring-inset lg:from-25%"
           />
           <div className="relative p-10">
-            <p className="text-xl/7 text-white">
+            <p className="text-white sm:text-xl/7">
               “Our values shape every decision, ensuring we deliver tools that
               are affordable, simple, and innovative.”
             </p>

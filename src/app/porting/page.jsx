@@ -6,6 +6,7 @@ import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 import { CheckIcon } from '@heroicons/react/16/solid'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Number Porting',
@@ -99,9 +100,11 @@ function CoreTerms() {
                   <p className="mt-2 text-lg text-gray-600">{faq.answer}</p>
                 </div>
                 <div className="relative">
-                  <img
+                  <Image
                     src={faq.image}
                     alt={faq.alt}
+                    width={750}
+                    height={750}
                     className="w-full rounded-xl object-cover shadow-lg transition-transform duration-300 hover:scale-105"
                   />
                 </div>
