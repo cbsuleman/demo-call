@@ -61,10 +61,10 @@ function FeatureHighlight({
           className={`grid grid-cols-1 items-center gap-12 lg:grid-cols-2 ${reverse ? 'lg:flex-row-reverse' : ''}`}
         >
           <div>
-            <div className="relative inline-block">
-              <h2 className="text-3xl font-bold">{title}</h2>
+            <div className="relative flex items-start gap-x-2">
+              <h2 className="text-2xl font-bold">{title}</h2>
               {badge && (
-                <span className="absolute -top-2 -right-12 rounded-full bg-pink-600 px-3 py-1 text-xs font-medium text-white">
+                <span className="rounded-full bg-pink-600 px-3 py-1 text-xs font-medium text-white sm:-right-12">
                   {badge}
                 </span>
               )}
