@@ -27,7 +27,7 @@ function HeroSection() {
             affordable, scalable call tracking.
           </Lead>
           <div className="mt-10 flex justify-center gap-4">
-            <Button className="w-full sm:w-auto" href="/signup">
+            <Button className="w-full sm:w-auto" href="#">
               Start Free Trial
             </Button>
             <Button
@@ -224,7 +224,7 @@ function CTASection() {
             credit card required—start tracking calls in minutes.
           </p>
           <div className="mt-10 flex justify-center gap-4">
-            <Button className="w-full sm:w-auto" href="/signup">
+            <Button className="w-full sm:w-auto" href="#">
               Start Free Trial
             </Button>
             <Button

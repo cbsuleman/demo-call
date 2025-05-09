@@ -28,7 +28,7 @@ function HeroSection() {
             growing companies.
           </Lead>
           <div className="mt-10 flex justify-center gap-4">
-            <Button className="w-full sm:w-auto" href="/signup">
+            <Button className="w-full sm:w-auto" href="#">
               Get Started Free
             </Button>
             <Button
@@ -261,7 +261,7 @@ function CTASection() {
             tracking—no risk, no limits.
           </p>
           <div className="mt-10 flex justify-center gap-4">
-            <Button className="w-full sm:w-auto" href="/signup">
+            <Button className="w-full sm:w-auto" href="#">
               Try It Now
             </Button>
             <Button

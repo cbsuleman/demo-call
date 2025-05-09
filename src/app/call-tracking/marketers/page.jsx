@@ -27,7 +27,7 @@ function HeroSection() {
             impact with precision.
           </Lead>
           <div className="mt-10 flex justify-center gap-4">
-            <Button className="w-full sm:w-auto" href="/signup">
+            <Button className="w-full sm:w-auto" href="#">
               Start Free Trial
             </Button>
             <Button
@@ -221,7 +221,7 @@ function CTASection() {
             card required—start optimizing in minutes.
           </p>
           <div className="mt-10 flex justify-center gap-4">
-            <Button className="w-full sm:w-auto" href="/signup">
+            <Button className="w-full sm:w-auto" href="#">
               Start Free Trial
             </Button>
             <Button

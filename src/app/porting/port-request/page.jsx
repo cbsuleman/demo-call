@@ -437,7 +437,7 @@ function CTASection() {
               Contact Support
             </Button>
             <Button
-              href="/signup"
+              href="#"
               variant="outline"
               className="w-full border-gray-300 text-gray-700 shadow-md hover:bg-gray-100 sm:w-auto"
             >

@@ -9,6 +9,7 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from '@heroicons/react/16/solid'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'CallGauge Support',
@@ -33,10 +34,7 @@ function HeroSection() {
             Let’s get you back to scaling effortlessly.
           </Lead>
           <div className="mt-10 flex justify-center gap-4">
-            <Button
-              className="w-full text-white shadow-md sm:w-auto"
-              href="/signup"
-            >
+            <Button className="w-full text-white shadow-md sm:w-auto" href="#">
               Start Now for Free
             </Button>
             <Button
@@ -71,12 +69,12 @@ function ContactSection() {
                 <EnvelopeIcon className="size-8 text-pink-600" />
                 <div>
                   <p className="font-semibold text-gray-900">Email Us</p>
-                  <a
+                  <Link
                     href="mailto:support@callgauge.com"
                     className="text-gray-600 hover:text-gray-900"
                   >
                     support@callgauge.com
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="flex items-center gap-4 rounded-xl bg-gray-50 p-4 shadow-sm">
@@ -281,10 +279,7 @@ function CTASection() {
             ))}
           </ul>
           <div className="mt-10 flex justify-center gap-4">
-            <Button
-              className="w-full text-white shadow-md sm:w-auto"
-              href="/signup"
-            >
+            <Button className="w-full text-white shadow-md sm:w-auto" href="#">
               Start Now for Free
             </Button>
             <Button

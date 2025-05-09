@@ -43,7 +43,7 @@ const links = [
   { href: '/features', label: 'Features', id: 'features-nav' },
   { href: '/pricing', label: 'Pricing', id: 'pricing-nav' },
   { href: '/company', label: 'Company', id: 'company-nav' },
-  { href: '/login', label: 'Login', id: 'login-nav' },
+  { href: '#', label: 'Login', id: 'login-nav' },
   { href: '/demo', label: 'Demo', id: 'demo-nav' },
   {
     href: '/pricing',

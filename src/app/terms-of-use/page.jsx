@@ -26,7 +26,7 @@ function HeroSection() {
             you agree to these terms.
           </Lead>
           <div className="mt-10 flex justify-center gap-4">
-            <Button className="w-full sm:w-auto" href="/signup">
+            <Button className="w-full sm:w-auto" href="#">
               Get Started
             </Button>
             <Button
@@ -211,7 +211,7 @@ function CTASection() {
             credit card required.
           </p>
           <div className="mt-10 flex justify-center gap-4">
-            <Button className="w-full sm:w-auto" href="/signup">
+            <Button className="w-full sm:w-auto" href="#">
               Sign Up Now
             </Button>
             <Button

@@ -28,7 +28,7 @@ function HeroSection() {
             platforms.
           </Lead>
           <div className="mt-10 flex justify-center gap-4">
-            <Button className="w-full sm:w-auto" href="/signup">
+            <Button className="w-full sm:w-auto" href="#">
               Try It Free
             </Button>
             <Button
@@ -273,7 +273,7 @@ function CTASection() {
             more—no commitment needed.
           </p>
           <div className="mt-10 flex justify-center gap-4">
-            <Button className="w-full sm:w-auto" href="/signup">
+            <Button className="w-full sm:w-auto" href="#">
               Start Now
             </Button>
 

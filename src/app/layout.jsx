@@ -15,12 +15,12 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://api.fontshare.com/css?f%5B%5D=switzer@400,500,600,700&amp;display=swap"
         />
-        <link
-          rel="alternate"
-          type="application/rss+xml"
-          title="The Radiant Blog"
-          href="/blogss/feed.xml"
-        />
+        {/*<link*/}
+        {/*  rel="alternate"*/}
+        {/*  type="application/rss+xml"*/}
+        {/*  title="The Radiant Blog"*/}
+        {/*  href="/blogss/feed.xml"*/}
+        {/*/>*/}
         <link
           rel="icon"
           href="/favicon.ico?<generated>"

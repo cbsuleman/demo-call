@@ -28,7 +28,7 @@ function HeroSection() {
             workflow, gain deeper insights, and boost ROI—all in one platform.
           </Lead>
           <div className="mt-10 flex justify-center gap-4">
-            <Button href="/signup" size="lg" variant="primary">
+            <Button href="#" size="lg" variant="primary">
               Start Free Trial
             </Button>
             <Button
@@ -307,7 +307,7 @@ function CTASection() {
             commitment required.
           </p>
           <div className="mt-10 flex justify-center gap-4">
-            <Button className="w-full sm:w-auto" href="/signup">
+            <Button className="w-full sm:w-auto" href="#">
               Try CallGauge Now
             </Button>
             <Button

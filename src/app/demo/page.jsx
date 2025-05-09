@@ -39,7 +39,7 @@ function DemoHero() {
             Start Demo Now
           </Button>
           <Button
-            href="/signup"
+            href="#"
             variant="outline"
             className="inline-flex items-center gap-2 border-gray-300 text-gray-700 transition-all duration-300 hover:bg-gray-100"
           >
@@ -146,7 +146,7 @@ function TrialCTA() {
           </p>
           <div className="mt-10 flex justify-center gap-4">
             <Button
-              href="/signup"
+              href="#"
               size="lg"
               variant="primary"
               className="w-full sm:w-auto"

@@ -355,7 +355,7 @@ function Values() {
             </li>
           </ul>
           <div className="mt-10">
-            <Button href="/signup" className="w-full sm:w-auto">
+            <Button href="#" className="w-full sm:w-auto">
               Start with CallGauge
             </Button>
           </div>

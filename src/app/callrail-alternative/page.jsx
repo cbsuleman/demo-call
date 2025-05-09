@@ -30,10 +30,7 @@ function HeroSection() {
             businesses.
           </Lead>
           <div className="mt-10 flex justify-center gap-4">
-            <Button
-              className="w-full text-white shadow-md sm:w-auto"
-              href="/signup"
-            >
+            <Button className="w-full text-white shadow-md sm:w-auto" href="#">
               Try CallGauge Free
             </Button>
             <Button
@@ -169,10 +166,7 @@ function ComparisonSection() {
           </table>
         </div>
         <div className="mt-10 flex justify-center gap-4">
-          <Button
-            className="w-full text-white shadow-md sm:w-auto"
-            href="/signup"
-          >
+          <Button className="w-full text-white shadow-md sm:w-auto" href="#">
             Try CallGauge Free
           </Button>
           <Button
@@ -301,10 +295,7 @@ function CTASection() {
             today.
           </Lead>
           <div className="mt-10 flex justify-center gap-4">
-            <Button
-              className="w-full text-white shadow-md sm:w-auto"
-              href="/signup"
-            >
+            <Button className="w-full text-white shadow-md sm:w-auto" href="#">
               Try CallGauge Free
             </Button>
             <Button

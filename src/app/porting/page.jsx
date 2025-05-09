@@ -222,7 +222,7 @@ function CTASection() {
               Submit Port Request
             </Button>
             <Button
-              href="/signup"
+              href="#"
               variant="outline"
               className="border-gray-300 text-gray-700 transition-all duration-300 hover:bg-gray-100"
             >

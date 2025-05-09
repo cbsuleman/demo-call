@@ -22,7 +22,7 @@ function CallToAction() {
         CallGauge.
       </p>
       <div className="mt-6">
-        <Button className="w-full sm:w-auto" href="/signup">
+        <Button className="w-full sm:w-auto" href="#">
           Start for Free
         </Button>
       </div>
